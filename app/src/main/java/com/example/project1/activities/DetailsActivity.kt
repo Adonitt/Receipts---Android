@@ -22,6 +22,5 @@ class DetailsActivity : ComponentActivity() {
         emri.text = intent.getStringExtra("emri")
         perberesit.text = intent.getStringExtra("perberesit")
         kaloritePerPorcion.text = intent.getStringExtra("kalorite")
-
     }
 }
