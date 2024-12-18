@@ -1,0 +1,74 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="1"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/item_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/item_image" />
+
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="66dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/cheff"
+        app:layout_constraintStart_toEndOf="@id/id"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Name"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/item_image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/perberesit_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Perberesit"
+        app:layout_constraintStart_toEndOf="@id/item_image"
+        app:layout_constraintTop_toBottomOf="@id/item_name" />
+
+    <TextView
+        android:id="@+id/kalorite_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:text="Kalorite"
+        app:layout_constraintStart_toEndOf="@id/item_image"
+        app:layout_constraintTop_toBottomOf="@id/item_name" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/add_to_favorites_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:background="@color/green"
+        android:padding="5dp"
+        android:src="@drawable/love"
+        android:text="Shto te te preferuarat"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.049" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
